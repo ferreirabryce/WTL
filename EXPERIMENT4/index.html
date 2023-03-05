@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Count Occurrences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Number of occurrences of each letter in specified string</h1>
+    <p class="p1">Enter the string: <input type="text" id="input"></p>
+    <p class="p2">Enter the character to count: <input type="text" id="char"></p>
+    <div class="btn">
+        <button onclick="countOccurences()">Count</button>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        function countOccurences() {
+            let str = document.getElementById("input").value;
+            let c = document.getElementById("char").value;
+            let count = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] == c) {
+                    count++;
+                }
+            }
+            let resultElement = document.getElementById("result");
+            resultElement.innerHTML = `Occurrences of ${c} is ${count}`;
+        }
+    </script>
+</body>
+
+</html>

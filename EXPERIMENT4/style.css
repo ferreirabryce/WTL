@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+}
+
+body{
+    background-image: url(images/backgroundimg.jpg);
+}
+
+.p1{
+    text-align: center;
+    padding-top: 150px;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.p2{
+    text-align: center;
+    padding-top: 30px;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.btn{
+    text-align: center;
+    color: aliceblue;
+}
+
+#result{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+}

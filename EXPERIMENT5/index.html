@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        WTL Classroom
+    </title>
+    <link rel="stylesheet" href="WTL.css">
+</head>
+
+<body>
+
+    <button>CLICK TO CHANGE THE COLOR</button>
+    <script type="text/javascript">
+        var color = ["red", "green", "blue"];
+        var i = 0;
+        document.querySelector("button").addEventListener("click", function () {
+            i = i < color.length ? ++i : 0;
+            document.querySelector("body").style.background = color[i]
+        })
+    </script>
+</body>
+
+</html>
